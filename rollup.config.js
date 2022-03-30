@@ -13,7 +13,7 @@ module.exports = {
   ],
   plugins: [
     require('rollup-plugin-polyfill-node')(),
-    require('@rollup/plugin-node-resolve')({ mainFields: ['module', 'main'] }),
+    require('rollup-plugin-node-resolve')({ mainFields: ['module', 'main'] }),
     require('@rollup/plugin-commonjs')(),
     require('@rollup/plugin-json')()
   ],
